@@ -1,7 +1,5 @@
 package aula06.tarefa;
 
-import java.util.Arrays;
-
 public class SensorTemperaturaOpc2 {
   static void main() {
     double[] vetorTeste = {20.5, 21.0, 19.8, -5.0, 22.1, 23.5, 24.0, 22.8, 110.0, 25.2, 26.0, 27.5, 30.0, 31.2, 32.5, 30.0, 28.5, 26.2, 25.0, 24.5, 23.0, 22.0, 21.5, 20.8};
