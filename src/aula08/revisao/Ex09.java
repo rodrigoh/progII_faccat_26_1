@@ -1,4 +1,4 @@
-package aula07.revisao;
+package aula08.revisao;
 
 public class Ex09 {
   static double calculaMedia(double[] vetor){

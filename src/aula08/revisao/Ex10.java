@@ -1,4 +1,4 @@
-package aula07.revisao;
+package aula08.revisao;
 
 public class Ex10 {
   static int[][] calculaTransposta(int[][] matriz){
