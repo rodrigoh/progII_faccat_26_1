@@ -15,13 +15,21 @@ public class Banco {
       opc = IO.readln(": ").toLowerCase().charAt(0);
       switch (opc){
         case 'd'->{
-
+          float valor = Float.parseFloat(IO.readln("Qual valor deseja depositar: "));
+          conta.depositar(valor);
+          IO.println("Deposito realizado!");
         }
         case 's'->{
-
+          float valor = Float.parseFloat(IO.readln("Qual valor deseja sacar: "));
+          if(conta.sacar(valor)){
+            IO.println("Saque realizado com sucesso!");
+          }
+          else{
+            IO.println("Saldo insuficiente");
+          }
         }
         case 'm'->{
-
+          IO.println(conta.mostraInformacoes());
         }
       }
     }
@@ -48,6 +56,9 @@ public class Banco {
             lista[cont] = new Conta(titular);
             IO.println("Conta criada com o seguinte identificador: " + lista[cont].identificador);
             cont++;
+          }
+          else{
+            IO.println("O banco tem o número máximo de clientes");
           }
         }
         case 'a'->{

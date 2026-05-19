@@ -2,16 +2,22 @@ package aula11.exemploPoo.conta;
 
 import java.util.Random;
 
+//Declaração da classe que representa nosso objeto
 public class Conta {
+
+  //Os atributos deste objeto
   String titular;
   String identificador;
   float saldo;
 
+  //Construtor deste objeto, não possui qualquer tipo de retorno, e como tem o mesmo nome da classe será escrito com inicial maiúscula
   Conta(String titular){
     this.titular = titular;
     identificador = geraIdentificador();
+    saldo = 0;
   }
 
+  //Demais ações ou métodos que o obejeto pode realizar.
   boolean sacar(float valor){
     if(saldo>=valor){
       saldo-=valor;
