@@ -12,7 +12,8 @@ public class Exemplo {
       IO.println("Saque de R$%.2f realizado com sucesso".formatted(valor));
     }
     else {
-      IO.println("Saldo insufuciente");
+      IO.println("Saldo insuficiente");
     }
+    IO.println(c1.mostraInformacoes());
   }
 }
