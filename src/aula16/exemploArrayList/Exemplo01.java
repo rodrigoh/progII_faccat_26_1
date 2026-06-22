@@ -22,7 +22,7 @@ public class Exemplo01 {
     IO.println(lista);
     IO.println(lista.size());
 
-    //lista.add("A");
+    lista.add("A");
     lista.add("C");
     lista.add("D");
     lista.add("E");
